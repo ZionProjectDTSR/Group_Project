@@ -1,74 +1,66 @@
-package Member4_Interface;
+# Smart City Route Planner
 
-import Member1_Graph.Graph;
-import Member2_Management.LocationManager;
-import Member3_TreeStructure.AVLTree;
-import Traversal.Traversal;
+## 📌 Project Overview
+This console-based Java application models a smart city's transport network using graph-based data structures. It allows users to manage locations and roads, view connections, and traverse routes using stacks or queues. The project demonstrates practical applications of graphs, AVL trees, and menu-driven interfaces.
 
-public class Main {
-    public static void main(String[] args) {
-        Graph graph = new Graph();
-        LocationManager manager = new LocationManager(graph);
-        AVLTree tree = new AVLTree();
+This assignment was developed for **CIT300 Graded Practical Assignment 1**.
 
-        try (java.util.Scanner sc = new java.util.Scanner(System.in)) {
-            while (true) {
-                System.out.println("\n--- Smart City Route Planner ---");
-                System.out.println("1. Add a new location");
-                System.out.println("2. Remove a location");
-                System.out.println("3. Add a road between locations");
-                System.out.println("4. Remove a road");
-                System.out.println("5. Display all connections");
-                System.out.println("6. Display all locations");
-                System.out.println("7. Traverse from a location");
-                System.out.println("8. Exit");
-                System.out.print("Enter your choice: ");
 
-                int choice = sc.nextInt();
-                sc.nextLine(); // consume newline
 
-                switch (choice) {
-                    case 1:
-                        System.out.print("Enter location name: ");
-                        String loc = sc.nextLine();
-                        manager.addLocation(loc);
-                        tree.insert(loc);
-                        break;
-                    case 2:
-                        System.out.print("Enter location name to remove: ");
-                        manager.removeLocation(sc.nextLine());
-                        break;
-                    case 3:
-                        System.out.print("Enter source location: ");
-                        String from = sc.nextLine();
-                        System.out.print("Enter destination location: ");
-                        String to = sc.nextLine();
-                        manager.addRoad(from, to);
-                        break;
-                    case 4:
-                        System.out.print("Enter source location: ");
-                        from = sc.nextLine();
-                        System.out.print("Enter destination location: ");
-                        to = sc.nextLine();
-                        manager.removeRoad(from, to);
-                        break;
-                    case 5:
-                        graph.displayConnections();
-                        break;
-                    case 6:
-                        tree.displayInOrder();
-                        break;
-                    case 7:
-                        System.out.print("Enter starting location: ");
-                        Traversal.depthFirstSearch(graph, sc.nextLine());
-                        break;
-                    case 8:
-                        System.out.println("Exiting...");
-                        return;
-                    default:
-                        System.out.println("Invalid choice. Try again.");
-                }
-            }
-        }
-    }
-}
+##  Features
+- Add and remove **locations** and **roads**
+- Display all **connections** between locations
+- Store location data using an **AVL tree**
+- Traverse the network using **Depth-First Search (DFS)**
+- Menu-driven interface with **input validation**
+
+---
+
+##  Team Roles
+
+| Member | Task |
+|--------|------|
+| **Member 1-22UG3-0244** | Designed and implemented the Graph data structure |
+| **Member 2-22UG3-0641** | Handled location and road management operations + Traversal |
+| **Member 3-22UG3-0535** | Built AVL tree for organizing location data |
+| **Member 4-22UG3-0687** | Developed the menu interface |
+
+
+
+## Folder Structure
+
+SmartCityRoutePlanner/  │ 
+                        ├── Member1_Graph/ 
+                            │ └── Graph.java 
+                        ├── Member2_Management/ 
+                            │ └── LocationManager.java
+                        ├── Traversal/ │ └── Traversal.java 
+                        ├── Member3_TreeStructure/ 
+                            │ └── AVLTree.java 
+                        ├── Member4_Interface/ 
+                            │ └── Main.java  
+                            ├── README.md └── .gitignore
+
+
+
+## How to Run
+
+1. Clone the repository:
+git clone https://github.com/ZionProjectDTSR/SmartCityRoutePlanner.git
+2. Compile all `.java` files:
+javac /.java
+3. Run the main program:
+java Member4_Interface.Main
+
+
+
+##  Demo Video
+Each team member recorded their contribution. The clips were merged into one final demo video submitted via LMS.
+
+
+
+##  Submission Details
+- **Module**: CIT300 – Data Structures & Algorithms
+- **Deadline**: October 23th
+- **Project**: Group Project 1
+
