@@ -14,13 +14,13 @@ This assignment was developed for **CIT300 Graded Practical Assignment 1**.
 - Traverse the network using **Depth-First Search (DFS)**
 - Menu-driven interface with **input validation**
 
----
+
 
 ##  Team Roles
 
 | Member | Task |
 |--------|------|
-| **Member 1-22UG3-0244** | Designed and implemented the Graph data structure |
+| **Member 1-22UG3-0422** | Designed and implemented the Graph data structure |
 | **Member 2-22UG3-0641** | Handled location and road management operations + Traversal |
 | **Member 3-22UG3-0535** | Built AVL tree for organizing location data |
 | **Member 4-22UG3-0687** | Developed the menu interface |
