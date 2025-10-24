@@ -34,12 +34,14 @@ SmartCityRoutePlanner/  │
                             │ └── Graph.java 
                         ├── Member2_Management/ 
                             │ └── LocationManager.java
-                        ├── Traversal/ │ └── Traversal.java 
+                        ├── Traversal/ 
+                            │ └── Traversal.java 
                         ├── Member3_TreeStructure/ 
                             │ └── AVLTree.java 
                         ├── Member4_Interface/ 
                             │ └── Main.java  
-                            ├── README.md └── .gitignore
+                            ├── README.md 
+                            └── .gitignore
 
 
 
@@ -61,6 +63,6 @@ Each team member recorded their contribution. The clips were merged into one fin
 
 ##  Submission Details
 - **Module**: CIT300 – Data Structures & Algorithms
-- **Deadline**: October 23th
+- **Deadline**: October 25th
 - **Project**: Group Project 1
 
