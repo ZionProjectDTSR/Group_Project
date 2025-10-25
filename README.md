@@ -48,7 +48,7 @@ SmartCityRoutePlanner/  │
 ## How to Run
 
 1. Clone the repository:
-git clone https://github.com/ZionProjectDTSR/SmartCityRoutePlanner.git
+git clone https://github.com/ZionProjectDTSR/Group_Project.git
 2. Compile all `.java` files:
 javac /.java
 3. Run the main program:
